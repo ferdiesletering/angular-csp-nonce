@@ -30,7 +30,7 @@ export class CustomDomSharedStylesHost
       const styleEl = this._doc.createElement('style');
       styleEl.textContent = style;
 
-      if (this._nonce) {
+      if (!style.includes('without-nonce') && this._nonce) {
         styleEl.setAttribute('nonce', this._nonce);
       }
 

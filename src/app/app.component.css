@@ -1,4 +1,4 @@
-.nginx {
+.without-nonce {
   padding: 15px;
-  background: limegreen;
+  background: red;
 }
